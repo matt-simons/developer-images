@@ -7,6 +7,7 @@ attributes:
 components:
   - name: devtools
     container:
-      image: gcr.io/google-containers/toolbox:latest
+      image: quay.io/devfile/base-developer-image:ubi8-latest
       memoryLimit: 2Gi
       memoryRequest: 256Mi
+      command: ['sleep', 'infinity']
