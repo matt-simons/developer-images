@@ -1,12 +1,12 @@
 schemaVersion: 2.1.0
 metadata:
-  name: developer-images
+  name: toolbox
 attributes:
   controller.devfile.io/storage-type: ephemeral
   controller.devfile.io/scc: container-build
 components:
   - name: devtools
     container:
-      image: quay.io/devfile/universal-developer-image:ubi8-latest
+      image: gcr.io/google-containers/toolbox:latest
       memoryLimit: 2Gi
       memoryRequest: 256Mi
